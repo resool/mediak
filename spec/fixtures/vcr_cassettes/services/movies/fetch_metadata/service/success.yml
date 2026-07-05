@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/search/movie?api_key=<TMDB_API_KEY>&language=pl&primary_release_year=2010&query=Inception
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 05 Jul 2026 20:38:53 GMT
+      Server:
+      - openresty
+      X-Gateway-Cache-Status:
+      - MISS
+      Cache-Control:
+      - public, max-age=22740
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - 85cb060e5a3bcfeed91b0573a559af28
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '22740'
+      X-Az:
+      - us-east-1c
+      X-Task-Id:
+      - 07fc19fe6452456a84c0b513ffd1a24f
+      Etag:
+      - W/"e2d923014a4e3b0267a80e1d59a2348c"
+      Vary:
+      - Origin
+      - accept-encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 aba4c94d7226be4a72f6be3307b6227a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - WAW51-P1
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - JdzeKM69y8ZzEVEv-Qemul6JINgF8u7IZfhV2LDbQJqD912E0cgK3g==
+      Age:
+      - '403'
+    body:
+      encoding: UTF-8
+      string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg","genre_ids":[28,878,12],"id":27205,"title":"Incepcja","original_language":"en","original_title":"Inception","overview":"Dom
+        Cobb jest niezwykle sprawnym złodziejem, mistrzem w wydobywaniu wartościowych
+        sekretów ukrytych głęboko w świadomości podczas fazy snu, kiedy umysł jest
+        najbardziej wrażliwy. Wyjątkowe umiejętności Cobba uczyniły z niego ważnego
+        gracza w świecie szpiegostwa przemysłowego, ale i najbardziej poszukiwanego
+        zbiega, a za swoją pozycję zapłacił utratą wszystkiego, co kocha. Teraz Cobb
+        otrzymuje szansę na odkupienie. Za sprawą jednego, ostatniego zadania może
+        odzyskać stracone życie. Musi tylko wraz ze swym zespołem dokonać rzeczy niemożliwej:
+        zamiast skraść myśl, zaszczepić ją w śpiącym umyśle. Jeśli im się to uda,
+        dokonają zbrodni doskonałej. Jednak nawet najbardziej precyzyjne planowanie
+        nie jest w stanie przygotować ich na spotkanie z niezwykłym przeciwnikiem,
+        który potrafi przewidzieć każdy ich ruch. Wróg, którego tylko Cobb mógł się
+        spodziewać.","popularity":53.9064,"poster_path":"/efvcvRgOAZgFC2hrPUa6YqrE1KG.jpg","release_date":"2010-07-15","softcore":false,"video":false,"vote_average":8.372,"vote_count":39476},{"adult":false,"backdrop_path":"/p8K8Z4yjaslJx5mTsIC5L6LJxQB.jpg","genre_ids":[16,28,53,878],"id":64956,"title":"Inception:
+        The Cobol Job","original_language":"en","original_title":"Inception: The Cobol
+        Job","overview":"","popularity":0.7914,"poster_path":"/sNxqwtyHMNQwKWoFYDqcYTui5Ok.jpg","release_date":"2010-12-07","softcore":false,"video":false,"vote_average":7.3,"vote_count":314},{"adult":false,"backdrop_path":null,"genre_ids":[10402],"id":973484,"title":"Inception:
+        Music from the Motion Picture","original_language":"en","original_title":"Inception:
+        Music from the Motion Picture","overview":"","popularity":0.078,"poster_path":"/7uM4DyRVAcgagvhZoWrkrqMPbqV.jpg","release_date":"2010-12-07","softcore":false,"video":true,"vote_average":7.0,"vote_count":3}],"total_pages":1,"total_results":3}'
+  recorded_at: Sun, 05 Jul 2026 20:45:36 GMT
+recorded_with: VCR 6.4.0
