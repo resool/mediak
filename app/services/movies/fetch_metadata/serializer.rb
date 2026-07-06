@@ -7,16 +7,16 @@ module Movies
       end
 
       def to_h
-        @to_h ||= begin 
+        @to_h ||= begin
           if chosen_movie.nil?
             {}
           else
             {
-              title_pl: chosen_movie['title'],
-              title_original: chosen_movie['original_title'],
-              description: chosen_movie['overview'],
+              title_pl: chosen_movie["title"],
+              title_original: chosen_movie["original_title"],
+              description: chosen_movie["overview"],
               external_id: chosen_movie_external_id,
-              yob: chosen_movie['release_date'].to_date.year,
+              yob: chosen_movie["release_date"].to_date.year,
               external_ids_candidates: external_ids_candidates
             }
           end
@@ -28,7 +28,7 @@ module Movies
       attr_reader :fetch_movie_strategy, :result_array
 
       def chosen_movie_external_id
-        @chosen_movie_external_id ||= chosen_movie['id']
+        @chosen_movie_external_id ||= chosen_movie["id"]
       end
 
       def chosen_movie
@@ -36,7 +36,7 @@ module Movies
       end
 
       def external_ids_candidates
-        result_array.reject { |result| result['id'] == chosen_movie_external_id }.map { |result| result['id'] }
+        result_array.reject { |result| result["id"] == chosen_movie_external_id }.map { |result| result["id"] }
       end
     end
   end

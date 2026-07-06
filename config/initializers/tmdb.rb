@@ -1,2 +1,2 @@
-Tmdb::Api.key(Settings.tmdb.api_key)
+Tmdb::Api.key(Settings.movies.tmdb.api_key)
 Tmdb::Api.language("pl")

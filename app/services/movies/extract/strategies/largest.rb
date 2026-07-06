@@ -2,17 +2,17 @@ module Movies
   module Extract
     module Strategies
       class Largest
-        def initialize(directory:)
-          @directory = directory
+        def initialize(collection:)
+          @collection = collection
         end
 
         def call
-          Dir.glob("#{directory}/*.mkv").max_by { |f| File.size(f) }
+          collection.max_by { |f| File.size(f) }
         end
 
         private
 
-        attr_reader :directory
+        attr_reader :collection
       end
     end
   end

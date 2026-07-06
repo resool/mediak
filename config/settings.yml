@@ -1,2 +1,4 @@
-tmdb:
-  api_key: secret_key
+movies:
+  tmdb:
+    api_key: secret_key
+  capture_minlength: 120

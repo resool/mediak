@@ -5,7 +5,7 @@ RSpec.describe Movies::Extract::Service do
 
   let(:params) do
     {
-      iso_path: file_fixture('movie.iso').to_s
+      iso_path: file_fixture('multi_video.iso').to_s
     }
   end
 

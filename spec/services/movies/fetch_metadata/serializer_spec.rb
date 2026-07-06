@@ -24,7 +24,7 @@ RSpec.describe Movies::FetchMetadata::Serializer do
       describe 'serialized keys' do
         subject(:keys) { to_h.keys }
 
-        let(:expected_array) { [:external_id, :description, :title_pl, :title_original, :yob, :external_ids_candidates] }
+        let(:expected_array) { [ :external_id, :description, :title_pl, :title_original, :yob, :external_ids_candidates ] }
 
         it { is_expected.to match_array(expected_array) }
       end
@@ -32,7 +32,7 @@ RSpec.describe Movies::FetchMetadata::Serializer do
       context 'when theres more than one result' do
         describe 'external_ids_candidates param' do
           subject(:external_ids_candidates) { to_h[:external_ids_candidates] }
-        
+
           it { is_expected.to be_present }
           it { is_expected.to be_kind_of Array }
         end
@@ -46,7 +46,7 @@ RSpec.describe Movies::FetchMetadata::Serializer do
           fetch_movie_strategy: Movies::FetchMetadata::Strategies::First
         }
       end
-      
+
       it { is_expected.to be_empty }
     end
   end

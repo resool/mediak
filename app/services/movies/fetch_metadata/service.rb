@@ -1,7 +1,7 @@
 module Movies
-  module FetchMetadata  
+  module FetchMetadata
     class Service
-      DEFAULT_FETCH_MOVIE_STRATEGY = 'Movies::FetchMetadata::Strategies::First'
+      DEFAULT_FETCH_MOVIE_STRATEGY = "Movies::FetchMetadata::Strategies::First"
 
       def initialize(title:, year:, fetch_movie_strategy: DEFAULT_FETCH_MOVIE_STRATEGY)
         @title = title
@@ -26,7 +26,7 @@ module Movies
 
       def search_results
         search = Tmdb::Search.new
-        search.resource('movie')
+        search.resource("movie")
         search.query(title)
         search.primary_release_year(year)
         search.fetch
