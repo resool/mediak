@@ -1,24 +1,24 @@
-# README
+# mediak
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## What it is
 
-Things you may want to cover:
+A multipurpose application hosted on a private server for:
+- Hosting and transcoding a DVD library. Rips physical discs, converts them into a download-friendly format, and serves the library to family members
+- Storing private media — images and videos — with minimal features: tagging and sharing
 
-* Ruby version
+This is not a SaaS. All accounts must be pre-created.
 
-* System dependencies
+## Why it exists
 
-* Configuration
+Rage driven development.
 
-* Database creation
+Main reasons:
+- Enshittification of major providers
+- Growing privacy concerns
+- A shelf of DVDs collecting dust
+- The tipping point: no legal way to watch Star Trek
 
-* Database initialization
+## Core principles
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Reuse hardware that's already lying around (old HDDs/SSDs)
+- Avoid cloud providers
