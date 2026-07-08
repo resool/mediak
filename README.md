@@ -1,5 +1,7 @@
 # mediak
 
+**Work in Progress**
+
 ## What it is
 
 A multipurpose application hosted on a private server for:
@@ -10,13 +12,14 @@ This is not a SaaS. All accounts must be pre-created.
 
 ## Why it exists
 
-Rage driven development.
-
-Main reasons:
-- Enshittification of major providers
-- Growing privacy concerns
-- A shelf of DVDs collecting dust
-- The tipping point: no legal way to watch Star Trek
+- Boredom
+- Missing coding
+- Testing new tools heard about on conferences or blogs
+- Rage driven development:
+  - Enshittification of major providers
+  - Growing privacy concerns
+  - A shelf of DVDs collecting dust
+  - The tipping point: no legal way to watch Star Trek
 
 ## Core principles
 
